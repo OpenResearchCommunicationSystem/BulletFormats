@@ -1,0 +1,14 @@
+Option Compare Database
+Option Explicit
+
+Public Function FilterCharacters(InString As String, CharToAllow As String) As String
+    Dim Outstring As String, X As Long, C As String, CPos As Long
+    Outstring = ""
+    For X = 1 To Len(InString)
+        C = Mid(InString, X, 1)
+        CPos = InStr(CharToAllow, C)
+        If CPos <> 0 Then Outstring = Outstring & C
+    Next
+    FilterCharacters = Outstring
+
+End Function
