@@ -12,7 +12,7 @@ There are many protocols that use the acronym “ORCS”, please refer use “OR
 
 
 
-All fields are 255 character text fields unless otherwise noted. The fields are designed to be exported into tab delimited text fields, but easaly converted to XML, JSON, or other formats. 
+All fields are 255 character text fields unless otherwise noted. The fields are designed to be exported into tab delimited text fields, but easaly convert to XML, JSON, or other formats. 
 
 The smallest version of an ORCS bullet is a 4 part series of text fields (4ORC) with the following labels:
 
