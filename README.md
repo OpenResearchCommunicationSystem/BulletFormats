@@ -20,65 +20,112 @@ BulletInKey	Random Long Integer
 SourcingInKey	Random Long Integer 
 
 Basic ORCS Bullet:																
+
 Source	
+
 Subject	
+
 Verb	
+
 Object	
+
 Cite	
+
 VerbDateTime	
+
 SubjectType	(Date/Time)
+
 VerbType	
+
 ObjectType	
+
 Relationship	
+
 Attribute	
+
 BulletHyperlink	
+
 Classification	
+
 Notice	
+
 ResearchNotes	
 
 
 Two Field ORCS Bullets (2ORC or "Tork") can be truncated from a basic ORCS bullet. Use Case: Index	
+
 Source	
+
 Subject
 
 
 Four Field ORCS Bullets (4ORC or "Fork")  can be truncated from a basic ORCS bullet. Use Case: Index, Basic Graph, Basic Sourcing			
+
 Source
+
 Subject
+
 Verb
+
 Object
 
+
 Keyed (External) ORCS Bullets: (KORC or "Kork") Appends a UTID (very low chance of collision) to the end of Basic ORCS Bullet:
+
 BulletExKey	(UTID)
+
 SourcingExKey	(UTID)
 
 
 Expanded ORCS Bullets (XORC or "zork") Appended after External Keyed Fields
+
 BulletSpareSchemaName	
+
 BulletSpareSchemaExKey	(UTID)
+
 BulletSpareDateTime01	(Date/Time)
+
 BulletSpareDateTime02	(Date/Time)
+
 BulletSpare01	
+
 BulletSpare02	
+
 BulletSpare03	
+
 BulletSpare04	
+
 BulletSpare05	
+
 BulletSpare06	
+
 BulletSpare07	
+
 BulletSpare08	
+
 BulletSpare09
 
 
 Defined Expanded ORCS Bullet (DORC or "Dork"), Appended to the end of an Expanded Bullet
-BulletSpareDateTime01Description	
-BulletSpareDateTime02Description	
-BulletSpare01Format	
-BulletSpare02Format	
-BulletSpare03Format	
-BulletSpare04Format	
-BulletSpare05Format	
-BulletSpare06Format	
-BulletSpare07Format	
-BulletSpare08Format	
-BulletSpare09Format
 
+BulletSpareDateTime01Description	
+
+BulletSpareDateTime02Description	
+
+BulletSpare01Format	
+
+BulletSpare02Format	
+
+BulletSpare03Format	
+
+BulletSpare04Format	
+
+BulletSpare05Format	
+
+BulletSpare06Format	
+
+BulletSpare07Format	
+
+BulletSpare08Format	
+
+BulletSpare09Format
