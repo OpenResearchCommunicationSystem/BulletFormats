@@ -31,9 +31,9 @@ Object
 
 Cite	
 
-VerbDateTime	
+VerbDateTime	(Date/Time)
 
-SubjectType	(Date/Time)
+SubjectType	
 
 VerbType	
 
