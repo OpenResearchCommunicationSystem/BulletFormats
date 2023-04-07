@@ -1,3 +1,17 @@
+Option Compare Database
+
+Private Sub BulletDataSchema_AfterUpdate()
+   
+    BulletDataSchema = FilterCharacters(BulletDataSchema, " 1234567890-=!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:zxcvbnm,./ZXCVBNM<>?`~")
+  
+End Sub
+
+Private Sub Object_AfterUpdate()
+    
+    Object = FilterCharacters(Object, " 1234567890-=!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:zxcvbnm,./ZXCVBNM<>?`~")
+    
+End Sub
+
 Private Sub Subject_AfterUpdate()
     
     Subject = FilterCharacters(Subject, " 1234567890-=!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:zxcvbnm,./ZXCVBNM<>?`~")
@@ -69,4 +83,3 @@ Private Sub BulletSpare09_AfterUpdate()
     BulletSpare09 = FilterCharacters(BulletSpare09, " 1234567890-=!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:zxcvbnm,./ZXCVBNM<>?`~")
   
 End Sub
-
