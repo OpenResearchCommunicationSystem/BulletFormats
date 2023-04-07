@@ -6,6 +6,22 @@ Private Sub BulletDataSchema_AfterUpdate()
   
 End Sub
 
+Private Sub BulletDataSchema_Change()
+    Me.BulletSpareDateTime01_Label.Value = Me.BulletDataSchema.Column(1)
+    Me.BulletSpareDateTime02_Label.Value = Me.BulletDataSchema.Column(2)
+    Me.BulletSpare01_Label.Value = Me.BulletDataSchema.Column(3)
+    Me.BulletSpare02_Label.Value = Me.BulletDataSchema.Column(4)
+    Me.BulletSpare03_Label.Value = Me.BulletDataSchema.Column(5)
+    Me.BulletSpare04_Label.Value = Me.BulletDataSchema.Column(6)
+    Me.BulletSpare05_Label.Value = Me.BulletDataSchema.Column(7)
+    Me.BulletSpare06_Label.Value = Me.BulletDataSchema.Column(8)
+    Me.BulletSpare07_Label.Value = Me.BulletDataSchema.Column(9)
+    Me.BulletSpare08_Label.Value = Me.BulletDataSchema.Column(10)
+    Me.BulletSpare09_Label.Value = Me.BulletDataSchema.Column(11)
+
+                                    
+End Sub
+
 Private Sub Object_AfterUpdate()
     
     Object = FilterCharacters(Object, " 1234567890-=!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{}|asdfghjkl;'ASDFGHJKL:zxcvbnm,./ZXCVBNM<>?`~")
