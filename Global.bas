@@ -1,0 +1,47 @@
+Attribute VB_Name = "Global"
+Option Compare Database
+Option Explicit
+
+Public Function FilterCharacters(InString As String, CharToAllow As String) As String
+    Dim Outstring As String, X As Long, C As String, CPos As Long
+    Outstring = ""
+    For X = 1 To Len(InString)
+        C = Mid(InString, X, 1)
+        CPos = InStr(CharToAllow, C)
+        If CPos <> 0 Then Outstring = Outstring & C
+    Next
+    FilterCharacters = Outstring
+
+End Function
+
+
+Public Function PickFile(Optional InitialFolder As String = "", _
+        Optional IsFolder As Boolean = False, _
+        Optional FilenameOnly As Boolean = False) As String
+  Dim FO As Object, FSO As Object, PickType As Long
+  
+  On Error Resume Next
+  PickType = IIf(IsFolder, 4, 3)
+  Set FO = Application.FileDialog(PickType)
+  If InitialFolder <> "" Then
+    FO.InitialFilename = InitialFolder
+  Else
+    FO.InitialFilename = CurrentProject.Path
+  End If
+  FO.Show
+  PickFile = FO.SelectedItems(1)
+    
+  If FilenameOnly Then
+        Set FSO = CreateObject("Scripting.FileSystemObject")
+        PickFile = FSO.GetFileName(PickFile)
+  End If
+     
+      
+End Function
+        
+
+
+
+
+
+
