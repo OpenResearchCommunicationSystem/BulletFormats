@@ -1,12 +1,16 @@
-Short Term To Do: 
-Add ResearchNotes Field to ORCS Basic format
-Change "InKey" autonumbers to random
-Change "ExKey" numbers to UTID
-Add User Temporary Default fields for Subject Verb Object
-Change order of all tables to newest standard
+Changed "InKey" autonumbers to random
+Changed Source Input Form to sort by source number
+Change "ExKey" numbers to UTID (Replication ID)
+Added ResearchNotes Field to ORCS Basic format
+Added User Temporary Default fields for Subject Verb Object
+Changed order of most tables/queries to newest standard
+Added Document Index
+Added Image Viewer
+
+
 
 
 Mid Term To Do:
 Split Database
 One Button Backup
-Document Index
+
