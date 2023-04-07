@@ -12,3 +12,35 @@ Public Function FilterCharacters(InString As String, CharToAllow As String) As S
     FilterCharacters = Outstring
 
 End Function
+
+
+Public Function PickFile(Optional InitialFolder As String = "", _
+        Optional IsFolder As Boolean = False, _
+        Optional FilenameOnly As Boolean = False) As String
+  Dim FO As Object, FSO As Object, PickType As Long
+  
+  On Error Resume Next
+  PickType = IIf(IsFolder, 4, 3)
+  Set FO = Application.FileDialog(PickType)
+  If InitialFolder <> "" Then
+    FO.InitialFilename = InitialFolder
+  Else
+    FO.InitialFilename = CurrentProject.Path
+  End If
+  FO.Show
+  PickFile = FO.SelectedItems(1)
+    
+  If FilenameOnly Then
+        Set FSO = CreateObject("Scripting.FileSystemObject")
+        PickFile = FSO.GetFileName(PickFile)
+  End If
+     
+      
+End Function
+        
+
+
+
+
+
+
